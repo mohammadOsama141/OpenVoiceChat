@@ -1,0 +1,10 @@
+sounddevice
+pyaudio
+librosa
+python-dotenv
+pydub
+websockets
+fastapi
+pandas
+pysbd
+uvicorn
