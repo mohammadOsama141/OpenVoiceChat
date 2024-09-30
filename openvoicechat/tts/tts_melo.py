@@ -12,7 +12,7 @@ class Mouth_melo(BaseMouth):
         self,
         language="EN",
         device="auto",
-        speed=1.0,
+        speed=1.2,
         player=sd,
         speaker=None,
     ):
@@ -27,7 +27,7 @@ class Mouth_melo(BaseMouth):
         )
 
     def run_tts(self, text):
-        output = self.model.tts_to_file(text, self.speaker_ids['EN-BR'], None, speed=self.speed)
+        output = self.model.tts_to_file(text, self.speaker_ids['EN-US'], None, speed=self.speed)
         return np.array(output)
 
 
